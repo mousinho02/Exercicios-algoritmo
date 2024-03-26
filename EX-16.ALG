@@ -1,18 +1,18 @@
 algoritmo "Ex-16"
 var
-//padr√£o camel case e deixar os nomes mais descritivos: qtdCigarrosDia, tempoAno
-CigarrosD, TempoA: inteiro
-TempoP, Total:real
+
+cigarrosDia, tempoAno: inteiro
+tempoDia, total:real
 inicio
 
- Escreval("Quantos cigarros voc√ç fuma por dia ?" )
- Leia (CigarrosD)
- //espa√ßo
- Escreval("A quantos anos voc√ç j≈† fuma ?")
- Leia(TempoA)
- //espa√ßo
- TempoP<- CigarrosD * 2,4
- Total<- TempoA * TempoP
- Escreval("O total de dias que voc√ç perder≈† ≈• : " , Total )
+ Escreval("Quantos cigarros vocÍç fuma por dia ?" )
+ Leia (cigarrosDia)
+
+ Escreval("A quantos anos vocÍç j·† fuma ?")
+ Leia(tempoAno)
+
+ total<- cigarrosDia * 0.16 * 365 * tempoAno
+
+ Escreval("O total de dias que vocÍç perder·† È : " , total )
 
 fimalgoritmo
