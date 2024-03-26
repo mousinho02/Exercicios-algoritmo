@@ -1,22 +1,20 @@
 algoritmo "Ex-14"
 var
-//Colocar os nomes das variáveis no padrão camelcase (padrão java)
-// ex: dias, totDias, totKm (sempre vai começar por minusculo e as outras 
-//palavras maiusculo. 
-DIAS, Totdias : inteiro
-KM, Totkm, Tot:real
+
+dias, totDias : inteiro
+km, totKm, tot:real
 inicio
 
  Escreva("Quantos quilometros você percorreu ? ")
- Leia(KM)
- //Deixar com um espaço aqui para facilitar a leitura
+ Leia(km)
+
  Escreva("Quantos dias você passou com o carro ?")
- Leia(DIAS)
-  //Deixar com um espaço aqui para facilitar a leitura
- Totkm<- 0,20 * KM
- Totdias<- 90 * DIAS
- Tot<- Totkm + Totdias
-  //Deixar com um espaço aqui para facilitar a leitura
- Escreval("O valor que você deve pagar é : R$" ,Tot )
+ Leia(dias)
+
+ totkm<- 0,20 * km
+ totDias<- 90 * dias
+ tot<- totKm + totDias
+
+ Escreval("O valor que você deve pagar é : R$" ,tot )
 
 fimalgoritmo
