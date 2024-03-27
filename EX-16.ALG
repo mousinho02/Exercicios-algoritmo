@@ -11,8 +11,8 @@ inicio
  Escreval("A quantos anos vocÍç j·† fuma ?")
  Leia(tempoAno)
 
- total<- cigarrosDia * 0.16 * 365 * tempoAno
+ total<- cigarrosDia * 10 * tempoAno * 365 / 1440
 
- Escreval("O total de dias que vocÍç perder·† È : " , total )
+ Escreval("O total de dias que vocÍç perder·† È : " , total:4:0 )
 
 fimalgoritmo
