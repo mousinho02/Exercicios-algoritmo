@@ -5,7 +5,7 @@ inicio
 
  Escreval("Quantos KM serão percorridos na sua viagem ?")
  Leia (distancia)
- 
+ // Aqui é <=200 porque é até 200
  Se (distancia< 200) entao
    valor<- distancia * 0.50
  senao
