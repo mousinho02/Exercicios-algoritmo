@@ -1,17 +1,17 @@
 algoritmo "EX-30"
 var
-t1, t2, t3:inteiro
+lado1, lado2, lado3:inteiro
 inicio
  Escreval ("Digite um número")
- Leia (t1)
+ Leia (lado1)
  
  Escreval ("Digite outro número")
- Leia (t2)
+ Leia (lado2)
  
  Escreval ("Digite mais um número")
- Leia (t3)
+ Leia (lado3)
  
- Se (t1< t2+t3) e (t2< t1+t3) e (t3< t1+t2) entao
+ Se (lado1< lado2+lado3) e (lado2< lado1+lado3) e (lado3< lado1+lado2) entao
    LimpaTela
    Escreval ("Com os números digitados a cima é  possivel fazer um triângulo")
  senao
@@ -19,15 +19,13 @@ inicio
   Escreval ("Com os números digitados a cima não é possivel fazer uma triângulo")
  FimSe
  
- Se (t1=t2)e (t2=t3) entao
+ Se (lado1=lado2)e (lado2=lado3) entao
    Escreval("O tipo do seu triângulo é: EQUILÁTERO")
  senao
-   Se (t1=t2) ou (t2=t3) ou (t3=t1) entao
+   Se (lado1=lado2) ou (lado2=lado3) ou (lado3=lado1) entao
      Escreval("O tipo do seu triângulo é: ISÓSCELES")
    senao
-     Se (t1<>t2) e (t2<>t3) e (t3<>1) entao
        Escreval("O tipo do seu triângulo é: ESCALENO")
-     FimSe
    FimSe
  FimSe
 fimalgoritmo
