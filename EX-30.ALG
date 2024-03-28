@@ -1,4 +1,4 @@
-algoritmo "EX-25"
+algoritmo "EX-30"
 var
 t1, t2, t3:inteiro
 inicio
