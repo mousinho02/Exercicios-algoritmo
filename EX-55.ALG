@@ -1,23 +1,23 @@
-algoritmo "EX-32"
+algoritmo "EX-55"
 var
-cont:inteiro //contador
-x:inteiro //numeros de tentativas
-n:inteiro //numero a ser gerado
+contador:inteiro //contador
+numeroTentativas:inteiro //numeros de tentativas
+numeroGerado:inteiro //numero a ser gerado
 inicio
-  n<- int(rand*11)
-  x<- -1
-  cont<- 1
+  numeroGerado<- int(rand*11)
+  numeroTentativas<- -1
+  contador<- 1
   
-  Enquanto (cont<=4) e (n<>x) faca
+  Enquanto (contador<=4) e (numeroGerado<>numeroTentativas) faca
 
   Escreval("ADVINHE O VALOR DE 0 A 10")
-  Leia (x)
+  Leia (numeroTentativas)
 
-   Se (x=n)entao
+   Se (numeroTentativas=numeroGerado)entao
       Limpatela
       Escreval("VOCÊ ACERTOU")
    senao
-   Se (x>n)entao
+   Se (numeroTentativas>numeroGerado)entao
       Limpatela
       Escreval("O número é menor")
    senao
@@ -26,10 +26,10 @@ inicio
    FimSe
    FimSe
 
-   cont<- cont +1
+   contador<- contador +1
   FimEnquanto
   
-  Se (x<>n) entao
+  Se (numeroTentativas<>numeroGerado) entao
      Limpatela
      Escreval("Tentativas esgotadas!")
   FimSe
