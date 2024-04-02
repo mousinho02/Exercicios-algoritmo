@@ -1,35 +1,35 @@
 algoritmo "EX-32"
 var
-cont:inteiro //contador
-x:inteiro //numeros de tentativas
-n:inteiro //numero a ser gerado
+contador:inteiro //contador
+numerotentativas:inteiro //numeros de tentativas
+numerogerado:inteiro //numero a ser gerado
 inicio
-  n<- int(rand*11)
-  x<- -1
-  cont<- 1
+  numerogerado<- int(rand*11)
+  numerotentativas<- -1
+  contador<- 1
   
-  Enquanto (cont<=3) e (n<>x) faca
+  Enquanto (contador<=3) e (numerogerado<>numerotentativas) faca
 
-  Escreval("ADVINHE O VALOR DE 0 A 10")
-  Leia (x)
+     Escreval("ADVINHE O VALOR DE 0 A 10")
+     Leia (numerotentativas)
 
-   Se (x=n)entao
-      Limpatela
-      Escreval("VOCÊ ACERTOU")
-   senao
-   Se (x>n)entao
-      Limpatela
-      Escreval("O número é menor")
-   senao
-      Limpatela
-      Escreval("O número é maior")
-   FimSe
-   FimSe
+      Se (numerotentativas=numerogerado)entao
+         Limpatela
+         Escreval("VOCÊ ACERTOU")
+      senao
+      Se (numerotentativas>numerogerado)entao
+         Limpatela
+         Escreval("O número é menor")
+      senao
+         Limpatela
+         Escreval("O número é maior")
+      FimSe
+      FimSe
 
-   cont<- cont +1
+      contador<- contador +1
   FimEnquanto
   
-  Se (x<>n) entao
+  Se (numerotentativas<>numerogerado) entao
      Limpatela
      Escreval("Tentativas esgotadas!")
   FimSe
