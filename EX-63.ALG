@@ -1,30 +1,28 @@
 algoritmo "EX-63"
 var
-soma, numeroPar, numeros, menorNumero,nMedia,maiorNumero :inteiro
+soma, numeroPar, numerosInseridos, menorNumero,qtdNumDigitados,maiorNumero :inteiro
 resp:caractere
 media:real
 inicio
- soma<- 0
- numeroPar<- 0
  menorNumero<- 100
  Repita
  Escreval("Digite um número ")
- Leia (numeros)
- Se (numeros> maiorNumero) entao
-    maiorNumero<- numeros
+ Leia (numerosInseridos)
+ Se (numerosInseridos> maiorNumero) entao
+    maiorNumero<- numerosInseridos
  FimSe
- Se (numeros<menorNumero) entao
-    menorNumero<-numeros
+ Se (numerosInseridos<menorNumero) entao
+    menorNumero<-numerosInseridos
  FimSe
- nMedia<-nMedia +1
- soma<- soma + numeros
- Se (numeros % 2 =0) entao
+ qtdNumDigitados<-qtdNumDigitados +1
+ soma<- soma + numerosInseridos
+ Se (numerosInseridos % 2 =0) entao
    numeroPar<- numeroPar +1
  FimSe
  Escreval("Você quer continuar ? s/n")
  Leia (resp)
 
- media<- soma/nMedia
+ media<- soma/qtdNumDigitados
  Ate (resp = "n")
 
  Limpatela
