@@ -1,14 +1,14 @@
 algoritmo "EX-83"
 var
 
-nAleatorio: vetor[1..4] de inteiro
+nAleatorio: vetor[1..20] de inteiro
 x,y, auxiliar : inteiro
 
 inicio
 
 EscrevaL("Numeros em ordem aleatoria")
 
-Para x <- 1 ate 4 faca
+Para x <- 1 ate 20 faca
 
  nAleatorio[x] <- int(rand*100)
  
@@ -16,13 +16,10 @@ Para x <- 1 ate 4 faca
 
 FimPara
 
-// 3, 1, 3,2
 
-// 1, 3
+Para x <- 1 ate 20 faca
 
-Para x <- 1 ate 4 faca
-
- Para y<-x + 1 ate 4 faca
+ Para y<-x + 1 ate 20 faca
  
   se (nAleatorio[x] > nAleatorio[y]) entao
 
@@ -39,7 +36,7 @@ FimPara
 
 EscrevaL("Ordem crescente")
 
-Para x <- 1 ate 4 faca
+Para x <- 1 ate 20 faca
 
  EscrevaL(nAleatorio[x])
 
