@@ -1,15 +1,29 @@
 algoritmo "EX-70"
 var
-contador, termo1, termo2, termo3, numeroSf:inteiro
+qtdNumeros, contador, primeiroTermo, segundoTermo, terceiroTermo:inteiro
 inicio
-  Escreval("Digite um número")
-  Leia(numeroSf)
-  termo1<- 0
-  termo2<-numeroSf
-  Para contador <- 1 ate 10 faca
-     termo3<- termo1 + termo2
-     Escreva(termo3)
-     termo1<- termo2
-     termo2<- termo3
-  FimPara
+
+EscrevaL("Digite quantos termos vc quer na sequencia de fibonnaci:")
+Leia(qtdNumeros)
+
+primeiroTermo <- 1
+segundoTermo <- primeiroTermo
+
+EscrevaL(primeiroTermo)
+EscrevaL(segundoTermo)
+
+Para contador <- 1 ate (qtdNumeros-2) faca
+
+  terceiroTermo <- primeiroTermo + segundoTermo
+  
+  primeiroTermo <- segundoTermo
+  segundoTermo <- terceiroTermo
+  
+  EscrevaL(terceiroTermo)
+
+
+FimPara
+
+
+
 fimalgoritmo
