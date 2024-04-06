@@ -1,23 +1,30 @@
 algoritmo "EX-96"
 var
-mediaNumero, contador:inteiro
+num1, num2 :inteiro
 soma1, F:real
-Funcao media(X:real):real
+Funcao calcularMedia(num1,num2:real):real
+
 var
-soma:inteiro
-media1:real
+
+ media:real
+
 inicio
-  X <- X / 2
-  Retorne X
+
+ media <- (num1+num2) / 2
+ Retorne media
+
 FimFuncao
+
 inicio
- Para contador<- 1 ate 2 faca
-   Escreva("Digite sua média ")
-   Leia (mediaNumero)
-   soma1<- soma1+mediaNumero
-   Limpatela
- FimPara
- F<- media (soma1)
+
+ Escreva("Digite sua média ")
+ Leia (num1)
+
+ Escreva("Digite sua média ")
+ Leia (num2)
+
+
+ F<- calcularMedia (num1, num2)
  Escreval("A média da sala é : " , F)
  
 fimalgoritmo
