@@ -1,11 +1,11 @@
 algoritmo "EX-95"
 var
-num1, num2, F:inteiro
-Funcao contador(X,Y:inteiro):inteiro
+num1, num2,chamarFuncao :inteiro
+Funcao calcularSoma(num1,num2:inteiro):inteiro
 var
 soma:inteiro
 inicio
-  soma<- X + Y
+  soma<- num1 + num2
   Retorne soma
 FimFuncao
 inicio
@@ -13,6 +13,6 @@ inicio
  Leia (num1)
  Escreval("Digite outro numero ")
  Leia (num2)
- F<-contador(num1,num2)
- Escreva ("A soma dos valores é " , F)
+ chamarFuncao <- calcularSoma(num1,num2)
+ Escreva ("A soma dos valores é " , calcularSoma(num1,num2))
 fimalgoritmo
