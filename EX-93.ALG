@@ -1,11 +1,11 @@
 algoritmo "EX-93"
 var
 numeroInicial, numeroIncrementado, numeroFinal, contadora:inteiro
-Procedimento contador(X,Y,Z:inteiro)
+Procedimento contador(numeroInicial,numeroIncrementado,numeroFinal:inteiro)
 inicio
- Enquanto (X<= Z) faca
-   Escreva (X)
-   X <- X + Y
+ Enquanto (numeroInicial<= numeroFinal) faca
+   Escreva (numeroInicial)
+   numeroInicial <- numeroInicial + numeroIncrementado
  FimEnquanto
 FimProcedimento
 inicio
