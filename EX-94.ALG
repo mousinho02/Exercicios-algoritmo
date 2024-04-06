@@ -1,24 +1,30 @@
 algoritmo "EX-94"
 var
 fimdaSequencia, contador, primeiroTermo, segundoTermo, terceiroTermo: inteiro
-Procedimento  Fibonacci(X:inteiro)
+Procedimento  mostrarNumerosFibonacci(qtdNumeros:inteiro)
 inicio
+ primeiroTermo <- 1
+ segundoTermo <- primeiroTermo
 
-  primeiroTermo <- 1
-  segundoTermo <- primeiroTermo
+ EscrevaL(primeiroTermo)
+ EscrevaL(segundoTermo)
 
-  Enquanto (primeiroTermo<=X) faca
-    Escreva(primeiroTermo)
-    terceiroTermo <- primeiroTermo + segundoTermo
-    primeiroTermo <- segundoTermo
-    segundoTermo<- terceiroTermo
-  FimEnquanto
+ Para contador <- 1 ate (qtdNumeros-2) faca
+
+   terceiroTermo <- primeiroTermo + segundoTermo
+   primeiroTermo <- segundoTermo
+   segundoTermo <- terceiroTermo
+
+  EscrevaL(terceiroTermo)
+
+
+FimPara
 FimProcedimento
 
 inicio
 
-  Escreva ("Digite um numero para a Sequencia ")
+  Escreva ("Até quanto você quer a q a sequência vá ? ")
   Leia (fimdaSequencia)
-  Fibonacci(fimdaSequencia)
+  mostrarNumerosFibonacci(fimdaSequencia)
 
 fimalgoritmo
