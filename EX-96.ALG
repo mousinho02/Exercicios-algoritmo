@@ -1,7 +1,7 @@
 algoritmo "EX-96"
 var
 num1, num2 :inteiro
-soma1, F:real
+ F:real
 Funcao calcularMedia(num1,num2:real):real
 
 var
